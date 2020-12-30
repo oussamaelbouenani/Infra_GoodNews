@@ -4,6 +4,7 @@
     <!-- ! adresse email non cryptée : spam possible -->
     <a href="mailto:<?php echo EMAIL ?>"><?php echo EMAIL ?></a>
     <p id="copyright">Mise en page s'inspirant d'<a href="http://www.alsacreations.com/tutoriels/" target="_blank">Alsacréations</a></p>
+    <p>Modifié par oussama</p>
 </footer>
 </body>
 </html>
