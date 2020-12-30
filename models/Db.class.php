@@ -7,7 +7,7 @@ class Db
     private function __construct()
     {
         try {
-            $this->_db = parse_url(getenv("DATABASE_URL"));
+            $this->_db = parse_url(getenv("postgres://umokzuugqbiteg:9c41cbdb17f8a86a82f7a0128fc6be73cde3b6f090b3de96c989f210770a6179@ec2-54-247-122-209.eu-west-1.compute.amazonaws.com:5432/d2b4k627gknhou"));
             $this->_db["path"] = ltrim($db["path"], "/");
 
             $this->_db->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
