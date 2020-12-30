@@ -7,17 +7,9 @@ class Db
     private function __construct()
     {
         try {
-            $db = parse_url(getenv("DATABASE_URL"));
-            $db["path"] = ltrim($db["path"], "/");
+            $_db = parse_url(getenv("DATABASE_URL"));
+            $_db["path"] = ltrim($db["path"], "/");
 
-            
-        } 
-		catch (PDOException $e) {
-		    die('Erreur de connexion à la base de données : '.$e->getMessage());
-        }
-
-		catch (PDOException $e) {
-		    die('Erreur de connexion à la base de données : '.$e->getMessage());
         }
     }
 
